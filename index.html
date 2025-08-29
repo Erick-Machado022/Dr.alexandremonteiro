@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/png" href="assets/favicon (2).png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Dr.Alexandre Monteiro</title>
 </head>
 <body>
@@ -76,7 +77,7 @@
         </div>
 
         <div class="hero-image">
-            <img src="assets/exemplo.jpeg" alt="Tratamento Dental">
+            <img src="assets/inicio.png" alt="Tratamento Dental">
         </div>
     </section>
 
@@ -88,7 +89,7 @@
 
         <div class="about-content-wrapper">
             <div class="about-image-side">
-                <img src="assets/exemplo.jpeg" alt="Imagem da clínica">
+                <img src="assets/img-sobre.png" alt="Imagem da clínica">
             </div>
 
             <div class="about-text-side">
@@ -254,32 +255,33 @@
         </div>
     </section>
 
+    <!--Galeria-->
+
     <section class="gallery" id="Galeria">
-        <div class="gallery-header">
-            <h2>Nossa <span class="highlight">Galeria</span></h2>
-            <p>Momentos especiais e o nosso dia a dia no consultório. Venha sorrir conosco!</p>
+    <div class="gallery-header">
+        <h2>Nossa <span class="highlight">Galeria</span></h2>
+        <p>Momentos especiais e o nosso dia a dia no consultório. Venha sorrir conosco!</p>
+    </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide gallery-item">
+                <img src="assets/img paciente 1.jpg" alt="Paciente interagindo com o consultório 1">
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://i.ibb.co/3k8135p/team-member-2.jpg" alt="Paciente interagindo com o consultório 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.ibb.co/L5hYwz1/team-member-1.jpg" alt="Paciente interagindo com o consultório 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.ibb.co/s6XgY7Y/team-member-3.jpg" alt="Paciente interagindo com o consultório 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.ibb.co/5c3Q3mF/team-member-4.jpg" alt="Paciente interagindo com o consultório 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.ibb.co/S7q3B5d/gallery-5.jpg" alt="Detalhe do consultório 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://i.ibb.co/2c4P85W/gallery-6.jpg" alt="Detalhe do consultório 2">
-                </div>
+            <div class="swiper-slide gallery-item">
+                <img src="assets/img paciente 2.jpg" alt="Paciente interagindo com o consultório 2">
             </div>
-    </section>
+            <div class="swiper-slide gallery-item">
+                <img src="assets/img paciente 3.jpg" alt="Paciente interagindo com o consultório 3">
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
 
 
     <section class="contact-section" id="Contato">
@@ -453,5 +455,6 @@
 
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

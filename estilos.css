@@ -795,36 +795,41 @@ body {
     margin: 0 auto;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
+/* Estilos para o Carrossel Swiper */
+.swiper {
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    height: 400px; /* Mantém a altura fixa do carrossel. Ajuste este valor se precisar de uma altura diferente. */
+    margin-top: 40px;
+    padding-bottom: 50px; /* Espaço para a paginação */
 }
 
-.gallery-item {
-    overflow: hidden;
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* O slide ocupa 100% da altura do Swiper (400px) */
+    /* Adicione um padding lateral aos slides para que as imagens não grudem nas bordas, se desejar */
+    /* padding: 0 10px; */
+}
+
+.swiper-slide img {
+    width: 50%;
+    height: 100%; /* A imagem ocupa 100% da altura do slide */
+    object-fit: cover; /* ESSENCIAL: Garante que a imagem preencha o espaço sem distorcer, cortando o excesso */
+    object-position: center; 
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-item:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+/* Configurações dos botões e paginação (mantidas) */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #193759;
 }
 
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: filter 0.3s ease;
-}
-
-.gallery-item:hover img {
-    filter: brightness(0.9);
+.swiper-pagination-bullet-active {
+    background: #193759;
 }
 
 

@@ -61,3 +61,46 @@ ${message}
     // 5. Redireciona o usuário para o WhatsApp
     window.open(whatsappUrl, '_blank');
 }
+
+
+// Inicialização do Swiper para a Galeria
+// Inicialização do Swiper para a Galeria
+document.addEventListener("DOMContentLoaded", function() {
+  new Swiper('.mySwiper', {
+      // Habilita a navegação com os botões
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      // Habilita a paginação (os pontinhos)
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      // Loop infinito
+      loop: true,
+      // Configuração para passar automaticamente
+      autoplay: {
+        delay: 3000 , // 7000 milissegundos = 7 segundos
+        disableOnInteraction: false, // para que a reprodução não pare quando o usuário interagir
+      },
+      // Opções responsivas
+      breakpoints: {
+          // para telas menores que 640px
+          0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+          },
+          // para telas de 768px ou maiores
+          768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+          },
+          // para telas de 1024px ou maiores
+          1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+          },
+      },
+  });
+});
