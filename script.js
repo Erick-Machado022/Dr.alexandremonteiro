@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
       loop: true,
       // Configuração para passar automaticamente
       autoplay: {
-        delay: 3000 , // 7000 milissegundos = 7 segundos
+        delay: 1200 , // 7000 milissegundos = 7 segundos
         disableOnInteraction: false, // para que a reprodução não pare quando o usuário interagir
       },
       // Opções responsivas
